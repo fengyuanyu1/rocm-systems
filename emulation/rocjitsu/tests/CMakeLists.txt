@@ -2077,6 +2077,11 @@ rj_add_interposer_test_suite(
     RenderNodePathMetadataMatchesDescriptor
     TimestampUsesAdvertisedNanosecondClock
 )
+rj_add_interposer_test_suite(
+    InterposerDrmTest
+    CONFIG "${CMAKE_SOURCE_DIR}/configs/gfx1250_mi455x.json"
+    PartialVramApertureLimitsCpuAccessibleQueries
+)
 
 set(_rj_interposer_pm4_tests
     SparseReplacementPreservesResidentTail
